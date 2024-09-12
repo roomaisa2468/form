@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Food Ordering Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="nav-menu">
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#">Chinese</a></li>
+            <li><a href="#">Italian</a></li>
+            <li><a href="#">Desi</a></li>
+        </ul>
+    </nav>
+        <!-- Restaurant Image -->
+    <div class="restaurant-image">
+        <img src="https://img.freepik.com/free-photo/tabletop-looking-out-empty-restaurant_23-2147701293.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726012800&semt=ais_hybrid" alt="Restaurant Image">
+    </div>
+
+    <!-- Food Selection -->
+    <div class="food-selection">
+        
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://www.shutterstock.com/image-photo/crispy-cheesy-chicken-patty-burger-600nw-1711365427.jpg" alt="Food 1">
+            <div class="food-details">
+                <p>Classic Zinger Burger <br>- PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+        <!-- Repeat similar structure for other food items -->
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ5wEBxKzV7OmUmpYKC8-fL2unqGk9DpCN6w&s" alt="Food 1">
+            <div class="food-details">
+                <p>Double Decker Zinger Burger - PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://www.shutterstock.com/image-photo/big-classic-beef-cheese-burger-600nw-2186648631.jpg" alt="Food 1">
+            <div class="food-details">
+                <p>Double Petty Beef Burger - PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://www.pngplay.com/wp-content/uploads/2/Pizza-Slice-PNG-Pic-Background.png" alt="Food 1">
+            <div class="food-details">
+                <p>Thin Crust Cheesy Pizza <br>- PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtKKIm7vq2JL7j9DVId-P11y8nA0vuG2B-dw&s" alt="Food 1">
+            <div class="food-details">
+                <p>Thin Crust Cheesy Peproni Pizza  - PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://png.pngtree.com/png-clipart/20230914/ourmid/pngtree-sausage-cheese-pizza-slice-three-dimensional-3d-gourmet-food-fast-food-png-image_10116852.png" alt="Food 1">
+            <div class="food-details">
+                <p>Cheesy Peproni Pizza -<br>PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy-HTm0iLzTd5qRzKAAgR5Zu6brnYa-gwOBQ&s" alt="Food 1">
+            <div class="food-details">
+                <p>Italian Style Meat Spaghetti- PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWASdHiY40MB9sy2b0SDO-7_jWilwxf0_LPQ&s" alt="Food 1">
+            
+            <div class="food-details">
+                <p>Corn Soup- <br>  PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuSUVqr3K_Hf-rSWDJYs3VNZFnU7mw6ptzUw&s" alt="Food 1">
+            
+            <div class="food-details">
+                <p>Crispy Fried Spring Rolls- <br> PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            
+            <img src="https://i.pinimg.com/originals/f9/73/05/f97305d8ad25dbafc01d9c5bf73d9617.png" alt="Food 1">
+            <div class="food-details">
+                <p>Chicken Korma- <br> PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb8BmuWnZz2pCWaV3fFn_6CHYm8typa9a80w&s" alt="Food 1">
+            
+            <div class="food-details">
+                <p>Nihari- <br> PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrHh93QM79aekYP7kShdMOlOxnNeRakm1C7A&s" alt="Food 1">
+            
+            <div class="food-details">
+                <p>Kabuli Pulao- <br> PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://t3.ftcdn.net/jpg/05/66/68/36/360_F_566683667_BeBecGFABNQYkZhquqJxhSj7UOcCY7ZJ.jpg" alt="Food 1">
+            <div class="food-details">
+                <p>Chicken Bombay Biryani- <br> PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1tYe2iGL56PqfozzfjegY4v8x9p-RRGXSvQ&s" alt="Food 1">
+            <div class="food-details">
+                <p>lime mojito- <br> PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://www.shutterstock.com/image-photo/blue-lemon-italian-soda-isolate-260nw-314218973.jpg" alt="Food 1">
+            <div class="food-details">
+                <p> Blue Berry Slush-<br> PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+
+        <div class="food-item" onclick="toggleSelection(this, 300)">
+            <img src="https://img.freepik.com/premium-photo/drink-orange-soda-with-ice-glass-white-background-copy-space_55716-3305.jpg" alt="Food 1">
+            <div class="food-details">
+                <p>Fresh Orange Juice- <br>PKR300</p>
+                <div class="quantity-control">
+                    <button onclick="decreaseQty(this, 300)">-</button>
+                    <span class="quantity">0</span>
+                    <button onclick="increaseQty(this, 300)">+</button>
+                </div>
+            </div>
+            <span class="checkmark">✔</span>
+        </div>
+    
+    </div>
+
+    <!-- Total Price -->
+    <div class="total-amount">
+        Total Amount: PKR<span id="totalPrice">0</span>
+    </div>
+
+    <!-- Order Form -->
+    <div class="order-form">
+        <h2>Order Details</h2>
+        <form id="orderForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- <label>Do you want to pick up your order?</label><br>
+            <input type="radio" id="pickupYes" name="pickup" value="yes">
+            <label for="pickupYes">Yes</label><br>
+            <input type="radio" id="pickupNo" name="pickup" value="no">
+            <label for="pickupNo">No</label><br><br> -->
+
+            <label>Do you want to pick up your order?</label><br>
+        <div class="radio-group">
+            <input type="radio" id="pickupYes" name="pickup" value="yes">
+            <label for="pickupYes">Yes</label><br>
+            <input type="radio" id="pickupNo" name="pickup" value="no">
+            <label for="pickupNo">No</label>
+        </div>
+
+
+            <!-- Delivery Information -->
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="state">State/Province:</label>
+            <input type="text" id="state" name="state" required><br><br>
+
+            <label for="postal">Postal/Zip Code:</label>
+            <input type="text" id="postal" name="postal" required><br><br>
+
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments"></textarea><br><br>
+
+            <input type="submit" value="Place Order">
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
